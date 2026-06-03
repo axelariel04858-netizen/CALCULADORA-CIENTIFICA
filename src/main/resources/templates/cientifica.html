@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CALCULADORA CIENTIFICA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class = "container text-center mt-5" style="max-width: 800px;">
+    <h1>CALCULADORA CIENTIFICA</h1>
+
+    <div class="mb-3">
+        <input type="text" class="form-control fs-2" id="display" value="0" readonly style="text-align: right; background-color:gray; color:white">
+    </div>
+
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row" style="margin-buttom: 10px">
+                <div class="col-3">
+                    <button type="button" class="btn btn-outline-primary w-100 fs-2" onclick="setDigito('7')">7</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-primary w-100 fs-2" onclick="setDigito('8')">8</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-primary w-100 fs-2" onclick="setDigito('9')">9</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-success w-100 fs-2" onclick="setOperador('+')">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-outline-primary w-100 fs-2" onclick="setDigito('4')">4</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-primary w-100 fs-2" onclick="setDigito('5')">5</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-primary w-100 fs-2" onclick="setDigito('6')">6</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-success w-100 fs-2" onclick="setOperador('-')">-</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-outline-primary w-100 fs-2" onclick="setDigito('1')">1</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-primary w-100 fs-2" onclick="setDigito('2')">2</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-primary w-100 fs-2" onclick="setDigito('3')">3</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-success w-100 fs-2" onclick="setOperador('*')">*</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-outline-success w-100 fs-2" onclick="setOperador('.')">.</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-primary w-100 fs-2" onclick="setDigito('0')">0</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-success w-100 fs-2" onclick="obtenerResultado('=')">=</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-success w-100 fs-2" onclick="setOperador('/')">/</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-outline-success w-100 fs-2" onclick="borrar()">C</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-success w-100 fs-2" onclick="setOperador('Math.sqrt(')">√</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-success w-100 fs-2" onclick="setOperador('Math.log(')">x^n</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-success w-100 fs-2" onclick="setOperador('pow')">X<sup>Y</sup></button>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            Diseñado y desarrollado por <strong>AXEL MARTINEZ URIBE</strong>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/cientifica.js"></script>
+</body>
+</html>
